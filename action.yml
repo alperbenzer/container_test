@@ -1,0 +1,16 @@
+# action.yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  who-to-greet:  # id of input
+    açıklama: 'Kiminle selamlaşacağız'
+    gerekli: doğru
+    varsayılan: 'Dünya'
+çıktılar:
+  zaman: # çıktının kimliği
+    açıklama: 'Sizi selamladığımız zaman'
+çalışır:
+  kullanımı: 'docker'
+  resim: 'Dockerfile'
+  argümanlar:
+    - ${{ inputs.kimi-karşılayacak }}
